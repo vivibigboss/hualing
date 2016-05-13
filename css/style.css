@@ -84,7 +84,7 @@ header .header-right ul li {
 }
 .swiper-container .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.8em;
   background: #fff;
   /* Center slide text vertically */
   display: -webkit-box;
@@ -103,4 +103,21 @@ header .header-right ul li {
 .content {
   height: 100%;
   clear: both;
+}
+.content .slide-item {
+  height: 700px;
+  width: 100%;
+}
+.content .bg-banner {
+  background: url('../images/banner.png') no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+.content .bg-banner .banner-right {
+  position: absolute;
+  top: 12em;
+  padding-left: 42.4em;
+  background-color: #fff;
 }
