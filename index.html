@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/plugin/swiper.min.js"></script>
 </head>
+
+<!--头部-->
 <header>
     <div class="header-left"><div class="header-logo"></div></div>
     <div class="header-right">
@@ -25,37 +27,27 @@
 </header>
 <body>
 <div class="content">
-    <!-- Swiper -->
-    <div class="swiper-container ">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide slide-item">
-                <div class="bg-banner">
-                    <!--<div class="banner-right">
-                        <div>华领财富<span>明显理财师</span></div>
-                        <div>全系列解决方案</div>
-                        <div class="QRcode"></div>
-                        <div class="">已兑付产品<span>231</span>个，未兑付产品<span>0</span>个</div>
-                    </div>-->
-                </div>
-            </div>
-            <div class="swiper-slide slide-item">Slide 2</div>
-            <div class="swiper-slide slide-item">Slide 3</div>
-            <div class="swiper-slide slide-item">Slide 4</div>
-            <div class="swiper-slide slide-item">Slide 5</div>
-            <div class="swiper-slide slide-item">Slide 6</div>
-            <div class="swiper-slide slide-item">Slide 7</div>
-            <div class="swiper-slide slide-item">Slide 8</div>
-            <div class="swiper-slide slide-item">Slide 9</div>
-            <div class="swiper-slide slide-item">Slide 10</div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <!-- <div class="swiper-button-next"></div>
-         <div class="swiper-button-prev"></div>-->
-    </div>
+    <!--背景-->
+   <div class="bg-banner section"></div>
+    <!--概况-->
+    <div class="situation section"></div>
+    <!--风控-->
+    <div class="risk-control section"></div>
+    <!--理财师-->
+    <div class="fiscal-division section"></div>
+    <!--用户-->
+    <div class="customer section"></div>
+    <!--研究院-->
+
+    <div class="academy  section"></div>
+    <!--合作伙伴-->
+    <div class="cooperation-partner section"></div>
+
 </div>
+
 </body>
+<!--底部-->
+<footer></footer>
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper('.swiper-container', {
@@ -66,7 +58,7 @@
         spaceBetween: 30,
         /* nextButton: '.swiper-button-next',
          prevButton: '.swiper-button-prev',*/
-        mousewheelControl: true
+        /*mousewheelControl: true*/
     });
 </script>
 </html>
