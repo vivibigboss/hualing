@@ -139,6 +139,7 @@ header .header-right ul li {
 .content .situation {
   text-align: center;
   height: 64em;
+  position: relative;
 }
 .content .situation .situation-header {
   font-size: 3.6em;
@@ -229,6 +230,7 @@ header .header-right ul li {
 }
 .content .risk-control {
   background: #f4e2c8;
+  position: relative;
 }
 .content .risk-control .risk-control-content {
   width: 60%;
@@ -405,6 +407,7 @@ footer .footer-bootom .bootom-content .icons-info .icon2 {
 }
 .fiscal-division {
   background: url("../images/licaishi_bg.jpg") no-repeat;
+  position: relative;
   height: 770px!important;
   text-align: center;
 }
@@ -506,6 +509,7 @@ footer .footer-bootom .bootom-content .icons-info .icon2 {
 }
 .academy {
   background: url("../images/academy_bg.jpg") no-repeat;
+  position: relative;
   height: 770px!important;
   text-align: center;
 }
@@ -568,6 +572,7 @@ footer .footer-bootom .bootom-content .icons-info .icon2 {
   height: 820px!important;
   background: #ffffff;
   width: 100%;
+  position: relative;
 }
 .cooperation-partner .cooperation-container {
   width: 1080px;
@@ -663,4 +668,116 @@ footer .footer-bootom .bootom-content .icons-info .icon2 {
 }
 .cooperation-partner .cooperation-container .cooperation-content ul li .logo20 {
   background: url('../images/logo20.jpg') center no-repeat;
+}
+.right-swiper {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+}
+.right-swiper ul .title {
+  float: left;
+  width: 50px;
+  font-size: 1.2em;
+  text-align: right;
+  height: 20px;
+  visibility: hidden;
+}
+.right-swiper ul .home-icon,
+.right-swiper ul .circle-icon {
+  float: left;
+  width: 30px;
+}
+.right-swiper ul li .home-icon-white {
+  background: url('../images/home-white.png') 0 6px no-repeat;
+  width: 20px;
+  height: 26px;
+  float: left;
+}
+.right-swiper ul li .home-icon {
+  background: url('../images/home_ico.png') 0 2px no-repeat;
+  width: 20px;
+  height: 26px;
+}
+.right-swiper ul li .circle-icon {
+  background: url('../images/circle.png') 8px 8px no-repeat;
+  width: 20px;
+  height: 23px;
+}
+.right-swiper ul li.active .home-icon {
+  background: url('../images/home-hl.png') no-repeat;
+}
+.right-swiper ul li.active .circle-icon {
+  background: url('../images/circle_hl.png') no-repeat !important;
+}
+.right-swiper ul li.active .title {
+  color: #e30419;
+  font-size: 1.2em;
+  visibility: visible;
+}
+.right-swiper ul li:not(.active):hover .title {
+  visibility: visible;
+}
+.bg-banner .right-swiper li:not(.active):hover {
+  cursor: pointer;
+  color: #e30419;
+}
+.bg-banner .right-swiper li:not(.active):hover .circle-icon {
+  background: url('../images/circle_hl.png') no-repeat !important;
+}
+.customer .right-swiper {
+  top: 40%;
+}
+.customer .right-swiper .circle-white-icon {
+  background: url('../images/circle-white-hl.png') 2px 0px no-repeat !important;
+  width: 20px;
+  height: 23px;
+  float: left;
+}
+.customer .right-swiper .title {
+  color: #fff!important;
+}
+.customer .right-swiper li:not(.active):hover {
+  cursor: pointer;
+  color: #e30419;
+}
+.customer .right-swiper li:not(.active):hover .circle-icon {
+  background: url('../images/circle-white-hl.png') 2px 0px no-repeat !important;
+}
+.situation .right-swiper li .circle-icon,
+.risk-control .right-swiper li .circle-icon {
+  background: url('../images/circle-gray.png') 0px 0px no-repeat !important;
+}
+.situation .right-swiper li:not(.active):hover,
+.risk-control .right-swiper li:not(.active):hover {
+  cursor: pointer;
+  color: #e30419;
+}
+.situation .right-swiper li:not(.active):hover .circle-icon,
+.risk-control .right-swiper li:not(.active):hover .circle-icon {
+  background: url('../images/circle_hl.png') no-repeat !important;
+}
+.situation .right-swiper li:not(.active):hover .home-icon,
+.risk-control .right-swiper li:not(.active):hover .home-icon {
+  background: url('../images/home-hl.png') no-repeat;
+}
+.academy .right-swiper li .circle-icon,
+.fiscal-division .right-swiper li .circle-icon,
+.cooperation-partner .right-swiper li .circle-icon {
+  background: url('../images/circle-gray.png') 0px 0px no-repeat !important;
+}
+.academy .right-swiper li:not(.active):hover,
+.fiscal-division .right-swiper li:not(.active):hover,
+.cooperation-partner .right-swiper li:not(.active):hover {
+  cursor: pointer;
+  color: #e30419;
+}
+.academy .right-swiper li:not(.active):hover .circle-icon,
+.fiscal-division .right-swiper li:not(.active):hover .circle-icon,
+.cooperation-partner .right-swiper li:not(.active):hover .circle-icon {
+  background: url('../images/circle_hl.png') no-repeat !important;
+}
+.academy .right-swiper li:not(.active):hover .home-icon,
+.fiscal-division .right-swiper li:not(.active):hover .home-icon,
+.cooperation-partner .right-swiper li:not(.active):hover .home-icon {
+  background: url('../images/home-hl.png') no-repeat;
 }
