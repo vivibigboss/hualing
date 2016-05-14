@@ -278,3 +278,111 @@ header .header-right ul li {
 .content .risk-control .risk-control-content .tab-content .panel:not(.active) {
   display: none;
 }
+.fiscal-division {
+  background: url("../images/licaishi_bg.jpg") no-repeat;
+  height: 770px!important;
+  text-align: center;
+}
+.fiscal-division .fiscal-division-title {
+  font-size: 3.6em;
+  color: #f83030;
+  padding-top: 70px;
+  margin-bottom: 26px;
+}
+.fiscal-division .fiscal-division-content {
+  font-size: 1.8em;
+  color: #666666;
+  margin-bottom: 40px;
+}
+.fiscal-division .fiscal-division-pic {
+  margin: auto;
+  width: 82%;
+}
+.fiscal-division .fiscal-division-pic ul li {
+  float: left;
+  width: 256px;
+  height: 390px;
+  position: relative;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-right: 18px;
+}
+.fiscal-division .fiscal-division-pic ul li img {
+  margin-top: 8px;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100% ;
+}
+.fiscal-division .fiscal-division-pic ul li .textwrap {
+  position: absolute;
+  bottom: 9px;
+  left: 9px;
+  width: 239px;
+  height: 77px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding-top: 22px;
+}
+.fiscal-division .more {
+  clear: both;
+  height: 50px;
+  width: 180px;
+  background: url("../images/more-button.png") center no-repeat;
+  margin: auto;
+  padding-top: 34px;
+}
+.academy {
+  background: url("../images/academy_bg.jpg") no-repeat;
+  height: 770px!important;
+  text-align: center;
+}
+.academy .academy-title {
+  font-size: 3.6em;
+  color: #f83030;
+  padding-top: 70px;
+  margin-bottom: 26px;
+}
+.academy .academy-content {
+  font-size: 1.8em;
+  color: #666666;
+  margin-bottom: 40px;
+}
+.academy .academy-pic {
+  margin: auto;
+  width: 82%;
+}
+.academy .academy-pic ul li {
+  float: left;
+  width: 256px;
+  height: 390px;
+  position: relative;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-right: 18px;
+}
+.academy .academy-pic ul li img {
+  margin-top: 8px;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100% ;
+}
+.academy .academy-pic ul li .textwrap {
+  position: absolute;
+  bottom: 9px;
+  left: 9px;
+  width: 239px;
+  height: 77px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding-top: 22px;
+}
+.academy .more {
+  clear: both;
+  height: 50px;
+  width: 180px;
+  background: url("../images/more-button.png") center no-repeat;
+  margin: auto;
+  padding-top: 34px;
+}
