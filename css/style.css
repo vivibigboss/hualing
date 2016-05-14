@@ -1,12 +1,12 @@
 body {
-  background: #fff;
+  background: #f4f4f4;
   color: #555;
   font-size: 10px;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
   position: relative;
   height: 100%;
+  font-family: "Microsoft YaHei";
 }
 a,
 p,
@@ -29,9 +29,10 @@ a {
   color: #555;
   text-decoration: none;
 }
-a:hover {
+a:hover,
+a:active {
   text-decoration: none;
-  color: red;
+  color: #e30419;
 }
 img {
   border: none;
@@ -41,6 +42,7 @@ ul,
 li {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 input,
 textarea,
@@ -53,6 +55,9 @@ table {
 }
 html {
   overflow-y: scroll;
+}
+header {
+  font-family: "Microsoft YaHei";
 }
 header .header-left {
   float: left;
@@ -78,45 +83,198 @@ header .header-right ul li {
   list-style: none;
   display: inline;
 }
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-.swiper-container .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
 .content {
   height: 100%;
   clear: both;
 }
 .content .section {
-  height: 700px;
+  height: 70em;
   width: 100%;
   margin: 0px;
 }
 .content .bg-banner {
   background: url('../images/banner.png') no-repeat;
   position: relative;
-  background-size: contain;
 }
 .content .bg-banner .banner-right {
   position: absolute;
-  top: 12em;
-  padding-left: 42.4em;
+  top: 12.8em;
+  right: 42.4em;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 35.6em;
+  height: 38.8em;
+  /* opacity: 0.7;*/
+}
+.content .bg-banner .banner-right .QRcode-content {
   background-color: #fff;
+  text-align: center;
+  height: 37.8em;
+  margin: 0.5em;
+}
+.content .bg-banner .banner-right .QRcode-content .QRcode-title {
+  font-size: 3em;
+  padding-top: 1em;
+}
+.content .bg-banner .banner-right .QRcode-content .QRcode-title span {
+  color: #333333;
+}
+.content .bg-banner .banner-right .QRcode-content .QRcode-title1 {
+  font-size: 3.6em;
+  color: #e30419;
+  padding-top: 0.2em;
+}
+.content .bg-banner .banner-right .QRcode-content .QRcode-footer {
+  font-size: 1.8em;
+  padding-top: 1em;
+}
+.content .bg-banner .banner-right .QRcode-content .QRcode-footer span {
+  color: #e30419;
+}
+.content .bg-banner .banner-right .QRcode {
+  background: url('../images/erweima_banner.png') center no-repeat;
+  height: 17.1em;
+}
+.content .situation {
+  text-align: center;
+}
+.content .situation .situation-header {
+  font-size: 3.6em;
+  color: #b81c22;
+  margin: 2.5em 0 0.8em;
+}
+.content .situation .situation-text {
+  font-size: 1.8em;
+  width: 70%;
+  text-align: center;
+  margin: auto auto 2.8em;
+  line-height: 2.8em;
+  color: #666666;
+}
+.content .situation .situation-content .situation-items {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  overflow: hidden;
+}
+.content .situation .situation-content .situation-items .item {
+  margin: 0;
+  float: left;
+  width: 25%;
+}
+.content .situation .situation-content .situation-items .item .item-title {
+  font-size: 2.4em;
+  color: #333333;
+  text-align: center;
+  width: 180px;
+  margin: 0.8em 0;
+}
+.content .situation .situation-content .situation-items .item .item-text {
+  font-size: 1.3em;
+  color: #666666;
+  width: 196px;
+  text-align: left;
+  line-height: 2em;
+}
+.content .situation .situation-content .situation-items .item .item-icon {
+  width: 180px;
+  height: 180px;
+  background: #fff;
+  border-radius: 50%;
+}
+.content .situation .situation-content .situation-items .item .icon {
+  width: 180px;
+  height: 180px;
+}
+.content .situation .situation-content .situation-items .item .professional-team-icon {
+  background: url('../images/professional-team.png') center no-repeat;
+}
+.content .situation .situation-content .situation-items .item .academy-icon {
+  background: url('../images/academy.png') center no-repeat;
+  width: 180px;
+  height: 180px;
+}
+.content .situation .situation-content .situation-items .item .platform-icon {
+  background: url('../images/platform.png') center no-repeat;
+  width: 180px;
+  height: 180px;
+}
+.content .situation .situation-content .situation-items .item .service-icon {
+  background: url('../images/service.png') center no-repeat;
+  width: 180px;
+  height: 180px;
+}
+.content .situation .situation-content .situation-items li:hover .item-text {
+  color: #333333;
+}
+.content .situation .situation-content .situation-items li:hover .item-title {
+  color: #b81c22;
+}
+.content .situation .situation-content .situation-items li:hover .item-icon {
+  background: #b81c22;
+}
+.content .situation .situation-content .situation-items li:hover .professional-team-icon {
+  background: url('../images/professional-team-white.png') center no-repeat;
+}
+.content .situation .situation-content .situation-items li:hover .academy-icon {
+  background: url('../images/academy-white.png') center no-repeat;
+}
+.content .situation .situation-content .situation-items li:hover .platform-icon {
+  background: url('../images/platform-white.png') center no-repeat;
+}
+.content .situation .situation-content .situation-items li:hover .service-icon {
+  background: url('../images/service-white.png') center no-repeat;
+}
+.content .risk-control {
+  background: #f4e2c8;
+}
+.content .risk-control .risk-control-content {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  padding: 5em 0 3em;
+}
+.content .risk-control .risk-control-content .tab-button {
+  background: #fff;
+  height: 5em;
+  width: 48em;
+  margin: auto;
+  text-align: center;
+  border-radius: 0.2em;
+}
+.content .risk-control .risk-control-content .tab-button ul li {
+  display: inline-block;
+  width: 30%;
+  line-height: 2.5em;
+  font-size: 1.8em;
+  color: #666666;
+}
+.content .risk-control .risk-control-content .tab-button ul li:hover,
+.content .risk-control .risk-control-content .tab-button ul li:active,
+.content .risk-control .risk-control-content .tab-button ul li.active {
+  color: #b81c22;
+  cursor: pointer;
+}
+.content .risk-control .risk-control-content .tab-button ul a.active {
+  color: #b81c22;
+}
+.content .risk-control .risk-control-content .tab-header {
+  font-size: 1.8em;
+  color: #666666;
+  padding: 1em 0;
+}
+.content .risk-control .risk-control-content .tab-content .panel.risk-control-frame .panel-content {
+  background: url('../images/risk-control-frame.png') no-repeat;
+}
+.content .risk-control .risk-control-content .tab-content .panel.risk-control-system .panel-content {
+  background: url('../images/risk-control-system.png') no-repeat;
+}
+.content .risk-control .risk-control-content .tab-content .panel.risk-control-flow .panel-content {
+  background: url('../images/risk-control-flow.png') no-repeat;
+}
+.content .risk-control .risk-control-content .tab-content .panel .panel-content {
+  width: 91.8em;
+  height: 46.4em;
+}
+.content .risk-control .risk-control-content .tab-content .panel:not(.active) {
+  display: none;
 }

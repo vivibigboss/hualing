@@ -8,6 +8,7 @@
     <title></title>
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/plugin/jquery.min.js"></script>
     <script type="text/javascript" src="js/plugin/swiper.min.js"></script>
 </head>
 
@@ -28,20 +29,108 @@
 <body>
 <div class="content">
     <!--背景-->
-   <div class="bg-banner section"></div>
+   <div class="bg-banner section">
+       <div class="banner-right">
+           <div class="QRcode-content">
+                <div class="QRcode-title">华领财富<span>明显理财师</span></div>
+                 <div class="QRcode-title1">全系列解决方案</div>
+                 <div class="QRcode"></div>
+                 <div class="QRcode-footer">已兑付产品<span>231</span>个，未兑付产品<span>0</span>个</div>
+           </div>
+         </div>
+   </div>
     <!--概况-->
-    <div class="situation section"></div>
+    <div class="situation section">
+        <div class="situation-header">了解华领</div>
+        <div class="situation-text">
+            华领投资集团旗下高端金融服务品牌，“华领财富”秉持“有态度、负责任、创造价值、共同成就”的价值观为投资者的财富人生保驾护航。
+        </div>
+        <div class="situation-content">
+           <div class="situation-items">
+               <ul>
+                   <li class="item">
+                       <div class="item-icon">
+                           <div class="professional-team-icon icon"></div>
+                       </div>
+                       <div class="item-title">专业的团队</div>
+                       <div class="item-text">国内顶尖金融专家顾问团、资深证券和基金兴业人员，提供专业性服务。</div>
+                   </li>
+                   <li class="item">
+                       <div class="item-icon">
+                           <div class="academy-icon icon"></div>
+                       </div>
+                       <div class="item-title">华领研究院</div>
+                       <div class="item-text">依托集团专业投研资源，拥有独立的数据研究和人才中心。</div>
+                   </li>
+                    <li class="item">
+                        <div class="item-icon">
+                            <div class="platform-icon icon"></div>
+                        </div>
+                       <div class="item-title">全产品平台</div>
+                       <div class="item-text">成熟运营3年的一站式服务平台，满足不同的投资需求。</div>
+                   </li>
+                   <li class="item">
+                       <div class="item-icon">
+                           <div class="service-icon icon"></div>
+                       </div>
+                       <div class="item-title">专属服务</div>
+                       <div class="item-text">超过100名的专业投资顾问，以专业敬业为全国高净值客户提供专属服务。</div>
+                   </li>
+               </ul>
+           </div>
+        </div>
+
+    </div>
+    <!--概况-->
+
     <!--风控-->
-    <div class="risk-control section"></div>
+    <div class="risk-control section">
+        <div class="tab risk-control-content">
+            <div class="tab-button">
+                <ul>
+                    <li ><a class="active" name="risk-control-frame">风控架构</a></li>
+                    <li><a  name="risk-control-system">风控体系</a></li>
+                    <li><a name="risk-control-flow"> 风控流程</a></li>
+                </ul>
+            </div>
+            <div class="tab-header">
+                从源头进行风控把控，深入调查、跟踪运作情况，确保产品的安全性及市场稀缺性
+            </div>
+            <div class="tab-content">
+                <div class="panel risk-control-frame active">
+                    <div class="panel-content active">
+                    </div>
+                </div>
+                <div class="panel risk-control-system">
+                    <div class="panel-content ">
+                    </div>
+                </div>
+                <div class="panel risk-control-flow">
+
+                    <div class="panel-content ">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--风控-->
+
     <!--理财师-->
     <div class="fiscal-division section"></div>
+    <!--理财师-->
+
     <!--用户-->
     <div class="customer section"></div>
+    <!--用户-->
+
+    <!--研究院-->
+    <div class="academy  section"></div>
     <!--研究院-->
 
-    <div class="academy  section"></div>
     <!--合作伙伴-->
     <div class="cooperation-partner section"></div>
+    <!--合作伙伴-->
 
 </div>
 
@@ -50,15 +139,26 @@
 <footer></footer>
 <!-- Initialize Swiper -->
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        direction: 'vertical',
-        slidesPerView: 1,
-        spaceBetween: 30,
-        /* nextButton: '.swiper-button-next',
-         prevButton: '.swiper-button-prev',*/
-        /*mousewheelControl: true*/
+
+    $().ready(function(){
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 30,
+            /* nextButton: '.swiper-button-next',
+             prevButton: '.swiper-button-prev',*/
+            /*mousewheelControl: true*/
+        });
+        $(".risk-control .tab-button a").on("click",function(e){
+            var target=$(this).currentTarget;
+            var className=$(this).attr("name");
+            $(".tab-button a").removeClass("active");
+            $(this).addClass("active");
+            $(".tab-content .panel").removeClass("active");
+            $(".tab-content ."+className+".panel").addClass("active");
+        });
     });
 </script>
 </html>
