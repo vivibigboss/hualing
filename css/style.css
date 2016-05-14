@@ -98,18 +98,18 @@ header .header-right ul li {
 }
 .content .bg-banner .banner-right {
   position: absolute;
-  top: 12.8em;
-  right: 42.4em;
+  top: 128px;
+  right: 424px;
   background-color: rgba(255, 255, 255, 0.5);
-  width: 35.6em;
-  height: 38.8em;
+  width: 356px;
+  height: 388px;
   /* opacity: 0.7;*/
 }
 .content .bg-banner .banner-right .QRcode-content {
   background-color: #fff;
   text-align: center;
-  height: 37.8em;
-  margin: 0.5em;
+  height: 378px;
+  margin: 5px;
 }
 .content .bg-banner .banner-right .QRcode-content .QRcode-title {
   font-size: 3em;
@@ -121,7 +121,7 @@ header .header-right ul li {
 .content .bg-banner .banner-right .QRcode-content .QRcode-title1 {
   font-size: 3.6em;
   color: #e30419;
-  padding-top: 0.2em;
+  padding-top: 2px;
 }
 .content .bg-banner .banner-right .QRcode-content .QRcode-footer {
   font-size: 1.8em;
@@ -132,7 +132,7 @@ header .header-right ul li {
 }
 .content .bg-banner .banner-right .QRcode {
   background: url('../images/erweima_banner.png') center no-repeat;
-  height: 17.1em;
+  height: 171px;
 }
 .content .situation {
   text-align: center;
@@ -301,6 +301,9 @@ footer .footer-content .container .column .column-title {
   color: #95a6b7;
   padding: 62px 0 30px;
 }
+footer .footer-content .container .column.qrcode {
+  width: 25%;
+}
 footer .footer-content .container .column .column-content ul li {
   font-size: 1.4em;
   color: #758594;
@@ -380,8 +383,20 @@ footer .footer-bootom .bootom-content .left .version-info {
   width: 80%;
 }
 footer .footer-bootom .bootom-content .icons-info {
+  float: left;
+  width: 25%;
+}
+footer .footer-bootom .bootom-content .icons-info .icon1 {
+  background: url('../images/bottomicon_03.png') no-repeat;
+  height: 4.1em;
+  width: 6em;
   float: right;
-  width: 30%;
+}
+footer .footer-bootom .bootom-content .icons-info .icon2 {
+  background: url('../images/bottomicon_05.png') no-repeat;
+  height: 4.1em;
+  width: 4.1em;
+  float: right;
 }
 .fiscal-division {
   background: url("../images/licaishi_bg.jpg") no-repeat;
@@ -502,4 +517,104 @@ footer .footer-bootom .bootom-content .icons-info {
   background: url("../images/more-button.png") center no-repeat;
   margin: auto;
   padding-top: 34px;
+}
+.cooperation-partner {
+  height: 820px!important;
+  background: #ffffff;
+  width: 100%;
+}
+.cooperation-partner .cooperation-container {
+  width: 1080px;
+  margin: auto;
+  padding: 74px 147px;
+  text-align: center;
+}
+.cooperation-partner .cooperation-container .cooperation-header .header-title {
+  font-size: 3.6em;
+  color: #b81c22;
+  padding-bottom: 22px;
+}
+.cooperation-partner .cooperation-container .cooperation-header .header-text {
+  font-size: 1.8em;
+  color: #666666;
+  line-height: 2.0em;
+  padding-bottom: 60px;
+}
+.cooperation-partner .cooperation-container .cooperation-content {
+  height: 441px;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul {
+  margin-bottom: 72px;
+  overflow: hidden;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li {
+  list-style: none;
+  display: inline;
+  float: left;
+  width: 210px;
+  height: 56px;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .icon {
+  width: 210px;
+  height: 56px;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo1 {
+  background: url('../images/logo1.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo2 {
+  background: url('../images/logo2.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo3 {
+  background: url('../images/logo3.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo4 {
+  background: url('../images/logo4.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo5 {
+  background: url('../images/logo5.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo6 {
+  background: url('../images/logo6.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo7 {
+  background: url('../images/logo7.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo8 {
+  background: url('../images/logo8.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo9 {
+  background: url('../images/logo9.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo10 {
+  background: url('../images/logo10.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo11 {
+  background: url('../images/logo11.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo12 {
+  background: url('../images/logo12.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo13 {
+  background: url('../images/logo13.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo14 {
+  background: url('../images/logo14.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo15 {
+  background: url('../images/logo15.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo16 {
+  background: url('../images/logo16.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo17 {
+  background: url('../images/logo17.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo18 {
+  background: url('../images/logo18.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo19 {
+  background: url('../images/logo19.jpg') center no-repeat;
+}
+.cooperation-partner .cooperation-container .cooperation-content ul li .logo20 {
+  background: url('../images/logo20.jpg') center no-repeat;
 }
