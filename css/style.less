@@ -6,7 +6,7 @@
 body { background:#f4f4f4; color:#555; font-size:10px;padding: 0;
   margin: 0;position: relative;
   height: 100%;
-  font-family: "Microsoft YaHei";/*width: 1440px;*/
+  font-family: "Microsoft YaHei";
 }
 a,p,blockquote,th,td { margin:0; padding:0; }
 h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
@@ -18,7 +18,7 @@ input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; 
 table { border-collapse:collapse; }
 html {overflow-y: scroll;/*width: 1480px;*/}
 
-
+/*.wrap{width: 1080px;margin: auto}*/
 //Ê×Ò³
 header{
   font-family: "Microsoft YaHei";background: #fff;overflow: hidden;
@@ -44,14 +44,14 @@ header{
   }
 }
 
-/*.wrap{width: 1400px;margin: auto;}*/
+.wrap{width: 1100px;margin: auto;}
 //Ò³ÃæÄÚÈÝ
 .content{
   height: 100%;
   clear: both;
   .section{
     //height: 70em;
-    height: 56em;
+    height: 640px;
     width: 100%;margin:0px;}
   //±³¾°¿é
   .bg-banner{
@@ -102,7 +102,7 @@ header{
           .service-icon{background: url('../images/service.png') center no-repeat;width: 180px;height: 180px;}
         }
         ul{
-          margin-left: 110px;
+         /* margin-left: 110px;*/
         }
         li:hover{
            .item-text{color:@bodyColor };
@@ -127,7 +127,7 @@ header{
      background: #f4e2c8;position: relative;height: 700px;
     position:relative;
      .risk-control-content{
-       width: 60%;text-align: center;margin: auto; padding: 44px 6px;
+       width: 80%;text-align: center;margin: auto; padding: 44px 6px;
        .tab-button{
          background: #fff;height: 50px;width: 480px; margin: auto;text-align: center;    border-radius: 2px;
          ul{
@@ -166,7 +166,7 @@ header{
 footer{
   height: 34.8em;width: 100%;
   .footer-content{
-   background: #202c3c;padding: 0 9em;height: 27.8em;
+   padding: 0 9em;height: 27.8em;background: #202c3c;
     .container{width: 108em;    margin: auto;
       .column {
         float: left;   width: 32%;
@@ -255,8 +255,10 @@ footer{
   }
   .fiscal-division-pic{
     margin: auto;
-    width: 74%;
+    width: 100%;
     ul{
+      overflow: hidden;
+      li:last-child{margin-right: 0px;}
       li{
         float:left;
         width: 256px;
@@ -375,8 +377,10 @@ footer{
   }
   .academy-pic{
     margin: auto;
-    width:74%;
+    width:100%;
     ul{
+      overflow: hidden;
+      li:last-child{ margin-right:0px;}
       li{
         float:left;
         width: 256px;
@@ -385,6 +389,7 @@ footer{
         text-align:center;
         background-color: rgba(255, 255, 255,.3);
         margin-right:18px;
+
         img{
           margin-top: 8px;
           width:auto;
@@ -431,7 +436,7 @@ footer{
    height: 820px!important;background: #ffffff;width: 100%;position: relative;
   position: relative;
     .cooperation-container{
-      width: 1080px;margin: auto;padding: 74px 147px;text-align: center;
+      width: 1080px;margin: auto;padding: 74px 0px;text-align: center;
       .cooperation-header{
         .header-title{ font-size: 3.6em;  color:@title;    padding-bottom: 22px;}
         .header-text{font-size: 1.8em;color:@gray; line-height: 2.0em;padding-bottom: 60px;}
@@ -478,7 +483,7 @@ footer{
 //¹ö¶¯°æ¿é
 .right-swiper{
   position: absolute;
-  right: 10%;
+  right: 8%;
   top: 50%;
   ul{
     .title{float: left;width: 50px;font-size: 1.2em;text-align: right;height: 20px;visibility: hidden;}
