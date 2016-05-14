@@ -296,15 +296,18 @@ footer .footer-content .container {
 }
 footer .footer-content .container .column {
   float: left;
-  width: 30%;
+  width: 32%;
 }
 footer .footer-content .container .column .column-title {
   font-size: 1.8em;
   color: #95a6b7;
-  padding: 62px 0 30px;
+  padding: 62px 20px 30px;
 }
 footer .footer-content .container .column.qrcode {
   width: 25%;
+}
+footer .footer-content .container .column.academy-info {
+  width: 35%;
 }
 footer .footer-content .container .column .column-content ul li {
   font-size: 1.4em;
@@ -331,7 +334,7 @@ footer .footer-content .container .column .column-content ul.liststyle li span {
   color: #758594;
 }
 footer .footer-content .container .column .column-content .content-top {
-  padding-left: 2em;
+  padding-left: 20px;
 }
 footer .footer-content .container .column .column-content .content-top .wechat-QRcode.left {
   background: url('../images/erweima_footer.png') no-repeat;
@@ -368,7 +371,7 @@ footer .footer-bootom .bootom-content {
 }
 footer .footer-bootom .bootom-content .left {
   float: left;
-  width: 60%;
+  width: 67%;
 }
 footer .footer-bootom .bootom-content .left .footer-logo {
   background: url('../images/footer-logo.png') no-repeat;
