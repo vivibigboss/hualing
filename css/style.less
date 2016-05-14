@@ -130,6 +130,70 @@ header{
      }
 
   }
+
+}
+
+//底部
+footer{
+  height: 34.8em;width: 100%;
+  .footer-content{
+   background: #202c3c;padding: 0 9em;height: 27.8em;
+    .container{width: 108em;    margin: auto;
+      .column {
+        float: left;   width: 30%;
+        .column-title {
+          font-size: 1.8em;color: rgb(149,166,183);padding: 62px 0 30px;
+        }
+        .column-content{
+          ul{
+            li{
+              font-size: 1.4em;color: rgb(117,133,148);line-height: 2.8em;height: 1.8em;text-indent: 2.0em;
+              &.gps-info{background:url('../images/footer-adress.png') 0 0.8em  no-repeat; }
+              &.phone-info{background:url('../images/footer-phone.png') 0 0.8em  no-repeat; }
+              &.email-info{background:url('../images/footer-mail.png') 0 0.8em no-repeat; }
+
+            }
+            &.liststyle{
+              li{list-style-type:square ;color: #fff;text-indent: 0em;
+                span{color: rgb(117,133,148);}
+              }
+            }
+          }
+          .content-top{
+            padding-left: 2em;
+            .wechat-QRcode.left{
+              background:url('../images/erweima_footer.png')  no-repeat; height: 12em;
+              float: left;width: 12em;padding-right: 1em;
+            }
+            .right{
+              float: left;;width: 40%;
+              .text1{font-size: 1.4em;color: rgb(189,199,212);padding-bottom: 0.5em;}
+              .text2{font-size: 1.3em;color: rgb(117,133,148);}
+            }
+          }
+          .QRcode-bg{
+            background:url('../images/erweima_bottom.png') -3em 10em no-repeat; height: 15em;
+          }
+        }
+      }
+    }
+  }
+  .footer-bootom{
+    background: #161f2a;height: 7em;
+    .bootom-content{
+     width: 108em; margin: auto;    padding: 1em 0;
+      .left{float: left;width: 60%;
+        .footer-logo{
+          background:url('../images/footer-logo.png')  no-repeat;height: 4em;width:20%;float: left;
+        }
+        .version-info{font-size: 1.4em;color: rgb(117,133,148);line-height: 1.8em;float: left;/*width: 46em;   */ width: 80%;}
+      }
+
+      .icons-info{
+        float: right;width: 30%;
+      }
+    }
+  }
 }
 //理财师
 .fiscal-division{
