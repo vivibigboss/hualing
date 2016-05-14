@@ -23,10 +23,13 @@ html {overflow-y: scroll;width: 1500px;}
 header{
   font-family: "Microsoft YaHei";
   .header-left{float:left;width:30%;
-     .header-logo{background: url(../images/logo.png) no-repeat 100%; padding: 5px 20px; width: 226px; height: 66px;
+     .header-logo{background: url(../images/logo.png) no-repeat 100%; padding: 5px 20px;
+       //width: 226px;
+       height: 66px;
      }
   }
   .header-right{float:left;width:70%;
+    text-align:center;
       ul{
         margin: 30px 0px;
         li{
@@ -41,11 +44,17 @@ header{
 .content{
   height: 100%;
   clear: both;
-  .section{height: 70em;width: 100%;margin:0px;}
+  .section{
+    //height: 70em;
+    height: 56em;
+    width: 100%;margin:0px;}
   //背景块
   .bg-banner{
     background: url('../images/banner.png') no-repeat ;position: relative;
-    .banner-right{position:absolute;top:128px;right: 424px;background-color: rgba(255,255,255,.5);
+    .banner-right{position:absolute;top:128px;
+      //right: 424px;
+      right:300px;
+      background-color: rgba(255,255,255,.5);
       width: 356px;height:388px;   /* opacity: 0.7;*/
      .QRcode-content{background-color: #fff;text-align: center;  height: 378px;margin: 5px;
         .QRcode-title{font-size: 3em;    padding-top: 1em;
@@ -62,7 +71,9 @@ header{
   }
   //概况
   .situation{
-    text-align: center;height: 64em;position: relative;
+    position:relative;
+    text-align: center;
+    //height: 64em;
     .situation-header{
         font-size: 3.6em;  color:@title;    margin: 70px 0 8px;
     }
@@ -72,7 +83,9 @@ header{
     }
     .situation-content{
       .situation-items{
-        width: 70%;text-align: center;margin: auto;overflow: hidden;
+        //width: 70%;
+        width:75%;
+        text-align: center;margin: auto;overflow: hidden;
         .item{ margin: 0;float: left;width: 25%;
           .item-title{  font-size: 2.4em; color:@bodyColor;text-align: center; width: 180px;    margin: 20px 0; }
           .item-text{font-size: 1.3em; color:@gray; width: 196px;    text-align: left;line-height: 2em;    }
@@ -82,6 +95,9 @@ header{
           .academy-icon{background: url('../images/academy.png') center no-repeat;width: 180px;height: 180px;}
           .platform-icon{background: url('../images/platform.png') center no-repeat;width: 180px;height: 180px;}
           .service-icon{background: url('../images/service.png') center no-repeat;width: 180px;height: 180px;}
+        }
+        ul{
+          margin-left: 110px;
         }
         li:hover{
            .item-text{color:@bodyColor };
@@ -94,12 +110,17 @@ header{
         }
       }
     }
-
+    .next-icon{
+      position:absolute;
+      bottom: 30px;
+      left: 50%;
+    }
   }
 
   //风控
   .risk-control{
      background: #f4e2c8;position: relative;
+    position:relative;
      .risk-control-content{
        width: 60%;text-align: center;margin: auto; padding: 44px 6px;
        .tab-button{
@@ -128,9 +149,12 @@ header{
          }
        }
      }
-
+    .next-icon{
+      position:absolute;
+      bottom: 30px;
+      left: 50%;
+    }
   }
-
 }
 
 //底部
@@ -204,8 +228,10 @@ footer{
 //理财师
 .fiscal-division{
   background:url("../images/licaishi_bg.jpg") no-repeat;position: relative;
+  background-size:100% 100%;
   height:770px!important;
   text-align:center;
+  position: relative;
   .fiscal-division-title{
     font-size: 3.6em;
     color: rgb(248,48,48);
@@ -219,7 +245,7 @@ footer{
   }
   .fiscal-division-pic{
     margin: auto;
-    width:82%;
+    width: 74%;
     ul{
       li{
         float:left;
@@ -263,11 +289,17 @@ footer{
     margin:auto;
     padding-top:34px;
   }
+  .next-icon{
+    position:absolute;
+    bottom: 30px;
+    left:49%;
+  }
 }
 //用户
 .customer{
-  background:#b81c22 url("../images/iPhone-6s-mockup-hand.png") 840px 154px no-repeat;position: relative;
-  height: 45.2em!important;
+  background:url("../images/iPhone-6s-mockup-hand.png")no-repeat;
+  background-size:100% 100%;
+  height: 452px!important;
   position:relative;
   .customer-wrap{
     position: absolute;
@@ -306,13 +338,19 @@ footer{
       }
     }
   }
-
+  .next-icon{
+    position:absolute;
+    bottom: 30px;
+    left: 50%;
+  }
 }
 //研究院
 .academy{
   background:url("../images/academy_bg.jpg") no-repeat;position: relative;
+  background-size:100% 100%;
   height:770px!important;
   text-align:center;
+  position: relative;
   .academy-title{
     font-size: 3.6em;
     color: rgb(248,48,48);
@@ -326,7 +364,7 @@ footer{
   }
   .academy-pic{
     margin: auto;
-    width:82%;
+    width:74%;
     ul{
       li{
         float:left;
@@ -370,11 +408,17 @@ footer{
     margin:auto;
     padding-top:34px;
   }
+  .next-icon{
+    position:absolute;
+    bottom: 30px;
+    left:49%;
+  }
 }
 
 //合作伙伴
 .cooperation-partner{
    height: 820px!important;background: #ffffff;width: 100%;position: relative;
+  position: relative;
     .cooperation-container{
       width: 1080px;margin: auto;padding: 74px 147px;text-align: center;
       .cooperation-header{
@@ -413,7 +457,11 @@ footer{
           }
       }
     }
-
+  .next-icon{
+    position:absolute;
+    bottom: 30px;
+    left: 50%;
+  }
 }
 
 //滚动版块
