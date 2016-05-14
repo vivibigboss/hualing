@@ -71,6 +71,7 @@ header{
   }
   //概况
   .situation{
+    position:relative;
     text-align: center;height: 64em;
     .situation-header{
         font-size: 3.6em;  color:@title;    margin: 70px 0 8px;
@@ -81,7 +82,9 @@ header{
     }
     .situation-content{
       .situation-items{
-        width: 70%;text-align: center;margin: auto;overflow: hidden;
+        //width: 70%;
+        width:75%;
+        text-align: center;margin: auto;overflow: hidden;
         .item{ margin: 0;float: left;width: 25%;
           .item-title{  font-size: 2.4em; color:@bodyColor;text-align: center; width: 180px;    margin: 20px 0; }
           .item-text{font-size: 1.3em; color:@gray; width: 196px;    text-align: left;line-height: 2em;    }
@@ -91,6 +94,9 @@ header{
           .academy-icon{background: url('../images/academy.png') center no-repeat;width: 180px;height: 180px;}
           .platform-icon{background: url('../images/platform.png') center no-repeat;width: 180px;height: 180px;}
           .service-icon{background: url('../images/service.png') center no-repeat;width: 180px;height: 180px;}
+        }
+        ul{
+          margin-left: 110px;
         }
         li:hover{
            .item-text{color:@bodyColor };
@@ -103,12 +109,17 @@ header{
         }
       }
     }
-
+    .next-icon{
+      position:absolute;
+      bottom: 30px;
+      left: 50%;
+    }
   }
 
   //风控
   .risk-control{
      background: #f4e2c8;
+    position:relative;
      .risk-control-content{
        width: 60%;text-align: center;margin: auto; padding: 44px 6px;
        .tab-button{
@@ -137,9 +148,12 @@ header{
          }
        }
      }
-
+    .next-icon{
+      position:absolute;
+      bottom: 30px;
+      left: 50%;
+    }
   }
-
 }
 
 //底部
@@ -216,6 +230,7 @@ footer{
   background-size:100% 100%;
   height:770px!important;
   text-align:center;
+  position: relative;
   .fiscal-division-title{
     font-size: 3.6em;
     color: rgb(248,48,48);
@@ -273,6 +288,11 @@ footer{
     margin:auto;
     padding-top:34px;
   }
+  .next-icon{
+    position:absolute;
+    bottom: 30px;
+    left:49%;
+  }
 }
 //用户
 .customer{
@@ -316,7 +336,11 @@ footer{
       }
     }
   }
-
+  .next-icon{
+    position:absolute;
+    bottom: 30px;
+    left: 50%;
+  }
 }
 //研究院
 .academy{
@@ -324,6 +348,7 @@ footer{
   background-size:100% 100%;
   height:770px!important;
   text-align:center;
+  position: relative;
   .academy-title{
     font-size: 3.6em;
     color: rgb(248,48,48);
@@ -381,11 +406,17 @@ footer{
     margin:auto;
     padding-top:34px;
   }
+  .next-icon{
+    position:absolute;
+    bottom: 30px;
+    left:49%;
+  }
 }
 
 //合作伙伴
 .cooperation-partner{
    height: 820px!important;background: #ffffff;width: 100%;
+  position: relative;
     .cooperation-container{
       width: 1080px;margin: auto;padding: 74px 147px;text-align: center;
       .cooperation-header{
@@ -424,5 +455,9 @@ footer{
           }
       }
     }
-
+  .next-icon{
+    position:absolute;
+    bottom: 30px;
+    left: 50%;
+  }
 }
