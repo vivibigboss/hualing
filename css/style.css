@@ -278,3 +278,107 @@ header .header-right ul li {
 .content .risk-control .risk-control-content .tab-content .panel:not(.active) {
   display: none;
 }
+footer {
+  height: 34.8em;
+  width: 100%;
+}
+footer .footer-content {
+  background: #202c3c;
+  padding: 0 9em;
+  height: 27.8em;
+}
+footer .footer-content .container {
+  width: 108em;
+  margin: auto;
+}
+footer .footer-content .container .column {
+  float: left;
+  width: 30%;
+}
+footer .footer-content .container .column .column-title {
+  font-size: 1.8em;
+  color: #95a6b7;
+  padding: 62px 0 30px;
+}
+footer .footer-content .container .column .column-content ul li {
+  font-size: 1.4em;
+  color: #758594;
+  line-height: 2.8em;
+  height: 1.8em;
+  text-indent: 2.0em;
+}
+footer .footer-content .container .column .column-content ul li.gps-info {
+  background: url('../images/footer-adress.png') 0 0.8em no-repeat;
+}
+footer .footer-content .container .column .column-content ul li.phone-info {
+  background: url('../images/footer-phone.png') 0 0.8em no-repeat;
+}
+footer .footer-content .container .column .column-content ul li.email-info {
+  background: url('../images/footer-mail.png') 0 0.8em no-repeat;
+}
+footer .footer-content .container .column .column-content ul.liststyle li {
+  list-style-type: square ;
+  color: #fff;
+  text-indent: 0em;
+}
+footer .footer-content .container .column .column-content ul.liststyle li span {
+  color: #758594;
+}
+footer .footer-content .container .column .column-content .content-top {
+  padding-left: 2em;
+}
+footer .footer-content .container .column .column-content .content-top .wechat-QRcode.left {
+  background: url('../images/erweima_footer.png') no-repeat;
+  height: 12em;
+  float: left;
+  width: 12em;
+  padding-right: 1em;
+}
+footer .footer-content .container .column .column-content .content-top .right {
+  float: left;
+  width: 40%;
+}
+footer .footer-content .container .column .column-content .content-top .right .text1 {
+  font-size: 1.4em;
+  color: #bdc7d4;
+  padding-bottom: 0.5em;
+}
+footer .footer-content .container .column .column-content .content-top .right .text2 {
+  font-size: 1.3em;
+  color: #758594;
+}
+footer .footer-content .container .column .column-content .QRcode-bg {
+  background: url('../images/erweima_bottom.png') -3em 10em no-repeat;
+  height: 15em;
+}
+footer .footer-bootom {
+  background: #161f2a;
+  height: 7em;
+}
+footer .footer-bootom .bootom-content {
+  width: 108em;
+  margin: auto;
+  padding: 1em 0;
+}
+footer .footer-bootom .bootom-content .left {
+  float: left;
+  width: 60%;
+}
+footer .footer-bootom .bootom-content .left .footer-logo {
+  background: url('../images/footer-logo.png') no-repeat;
+  height: 4em;
+  width: 20%;
+  float: left;
+}
+footer .footer-bootom .bootom-content .left .version-info {
+  font-size: 1.4em;
+  color: #758594;
+  line-height: 1.8em;
+  float: left;
+  /*width: 46em;   */
+  width: 80%;
+}
+footer .footer-bootom .bootom-content .icons-info {
+  float: right;
+  width: 30%;
+}
