@@ -429,6 +429,12 @@ footer .footer-bootom .bootom-content .icons-info {
   color: #ffffff;
   padding-top: 22px;
 }
+.fiscal-division .fiscal-division-pic ul li .p1 {
+  font-size: 2.2em;
+}
+.fiscal-division .fiscal-division-pic ul li .p2 {
+  font-size: 1.3em;
+}
 .fiscal-division .more {
   clear: both;
   height: 50px;
@@ -482,6 +488,12 @@ footer .footer-bootom .bootom-content .icons-info {
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
   padding-top: 22px;
+}
+.academy .academy-pic ul li .p1 {
+  font-size: 2.2em;
+}
+.academy .academy-pic ul li .p2 {
+  font-size: 1.3em;
 }
 .academy .more {
   clear: both;
