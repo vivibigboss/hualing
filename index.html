@@ -17,12 +17,12 @@
     <div class="header-left"><div class="header-logo"></div></div>
     <div class="header-right">
         <ul>
-            <li><a href="/en/123" class="">首页</a></li>
-            <li><a href="/en/456" class="">了解华领</a></li>
-            <li><a href="/en/789" class="">风控体系</a></li>
-            <li><a href="/en/789" class="">明星理财师</a></li>
-            <li><a href="/en/789" class="">华领动态</a></li>
-            <li><a href="/en/789" class="">华领研究院</a></li>
+            <li class="active"><a href="/en/123" class="">首页</a></li>
+            <li><a href="#" class="">了解华领</a></li>
+            <li><a href="#" class="">风控体系</a></li>
+            <li><a href="#" class="">明星理财师</a></li>
+            <li><a href="#" class="">华领动态</a></li>
+            <li><a href="#" class="">华领研究院</a></li>
         </ul>
     </div>
 </header>
@@ -349,7 +349,7 @@
                 </ul>
             </div>
         </div>
-        <div class="next-icon">
+        <div class="next-icon to-top">
             <img src="images/returnbutton_03.png">
         </div>
 
@@ -448,7 +448,12 @@
             $('html, body').animate({
                 scrollTop: $("."+targetClass).offset().top
             }, 1000);
+        });
 
+        $(".cooperation-partner .to-top img").on("click",function(e){
+            $('html, body').animate({
+                scrollTop: $(".bg-banner").offset().top
+            }, 1000);
         });
     });
 </script>
