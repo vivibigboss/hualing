@@ -7,6 +7,7 @@ body {
   position: relative;
   height: 100%;
   font-family: "Microsoft YaHei";
+  width: 1500px;
 }
 a,
 p,
@@ -55,6 +56,7 @@ table {
 }
 html {
   overflow-y: scroll;
+  width: 1500px;
 }
 header {
   font-family: "Microsoft YaHei";
