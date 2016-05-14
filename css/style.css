@@ -136,6 +136,7 @@ header .header-right ul li {
 }
 .content .situation {
   text-align: center;
+  height: 64em;
 }
 .content .situation .situation-header {
   font-size: 3.6em;
