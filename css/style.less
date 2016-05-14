@@ -23,10 +23,13 @@ html {overflow-y: scroll;width: 1500px;}
 header{
   font-family: "Microsoft YaHei";
   .header-left{float:left;width:30%;
-     .header-logo{background: url(../images/logo.png) no-repeat 100%; padding: 5px 20px; width: 226px; height: 66px;
+     .header-logo{background: url(../images/logo.png) no-repeat 100%; padding: 5px 20px;
+       //width: 226px;
+       height: 66px;
      }
   }
   .header-right{float:left;width:70%;
+    text-align:center;
       ul{
         margin: 30px 0px;
         li{
@@ -41,11 +44,17 @@ header{
 .content{
   height: 100%;
   clear: both;
-  .section{height: 70em;width: 100%;margin:0px;}
+  .section{
+    //height: 70em;
+    height: 56em;
+    width: 100%;margin:0px;}
   //背景块
   .bg-banner{
     background: url('../images/banner.png') no-repeat ;position: relative;
-    .banner-right{position:absolute;top:128px;right: 424px;background-color: rgba(255,255,255,.5);
+    .banner-right{position:absolute;top:128px;
+      //right: 424px;
+      right:300px;
+      background-color: rgba(255,255,255,.5);
       width: 356px;height:388px;   /* opacity: 0.7;*/
      .QRcode-content{background-color: #fff;text-align: center;  height: 378px;margin: 5px;
         .QRcode-title{font-size: 3em;    padding-top: 1em;
@@ -204,6 +213,7 @@ footer{
 //理财师
 .fiscal-division{
   background:url("../images/licaishi_bg.jpg") no-repeat;
+  background-size:100% 100%;
   height:770px!important;
   text-align:center;
   .fiscal-division-title{
@@ -219,7 +229,7 @@ footer{
   }
   .fiscal-division-pic{
     margin: auto;
-    width:82%;
+    width: 74%;
     ul{
       li{
         float:left;
@@ -311,6 +321,7 @@ footer{
 //研究院
 .academy{
   background:url("../images/academy_bg.jpg") no-repeat;
+  background-size:100% 100%;
   height:770px!important;
   text-align:center;
   .academy-title{
@@ -326,7 +337,7 @@ footer{
   }
   .academy-pic{
     margin: auto;
-    width:82%;
+    width:74%;
     ul{
       li{
         float:left;
