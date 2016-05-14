@@ -310,7 +310,7 @@ footer {
   width: 100%;
 }
 footer .footer-content {
-  padding: 0 9em;
+  padding: 1em 0;
   height: 27.8em;
   background: #202c3c;
 }
