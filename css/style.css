@@ -55,6 +55,7 @@ table {
 }
 html {
   overflow-y: scroll;
+  /*overflow-x: hidden;*/
   /*width: 1480px;*/
 }
 /*.wrap{width: 1080px;margin: auto}*/
@@ -68,8 +69,8 @@ header .header-left {
   width: 30%;
 }
 header .header-left .header-logo {
-  background: url(../images/logo.png) no-repeat 100%;
-  padding: 5px 20px;
+  background: url(../images/logo.png) 3px 10px no-repeat;
+  padding: 5px 0px;
   height: 66px;
 }
 header .header-right {
@@ -91,8 +92,11 @@ header .header-right ul li.active a {
   color: #e30419;
 }
 .wrap {
-  width: 1100px;
+  width: 1080px;
   margin: auto;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
 }
 .content {
   height: 100%;
@@ -104,13 +108,17 @@ header .header-right ul li.active a {
   margin: 0px;
 }
 .content .bg-banner {
-  background: url('../images/banner.png') no-repeat;
+  /* filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/banner.png',sizingMethod='scale');*/
+  background: url('../images/banner.jpg') no-repeat;
+  height: 700px!important;
+  /*  background-size: 100% 700px;*/
   position: relative;
+  background-position: center;
 }
 .content .bg-banner .banner-right {
   position: absolute;
   top: 128px;
-  right: 300px;
+  right: 61px;
   background-color: rgba(255, 255, 255, 0.5);
   width: 356px;
   height: 388px;
@@ -122,9 +130,14 @@ header .header-right ul li.active a {
   height: 378px;
   margin: 5px;
 }
+.content .bg-banner .banner-right .QRcode-content .QRcode-center {
+  padding-top: 23px;
+}
 .content .bg-banner .banner-right .QRcode-content .QRcode-title {
   font-size: 3em;
-  padding-top: 1em;
+  padding-top: 10px;
+  /*text-align: left;padding-left: 30px;*/
+  text-align: center;
 }
 .content .bg-banner .banner-right .QRcode-content .QRcode-title span {
   color: #333333;
@@ -133,6 +146,8 @@ header .header-right ul li.active a {
   font-size: 3.6em;
   color: #e30419;
   padding-top: 2px;
+  text-align: center;
+  /*text-align: left;padding-left: 30px;*/
 }
 .content .bg-banner .banner-right .QRcode-content .QRcode-footer {
   font-size: 1.8em;
@@ -159,11 +174,11 @@ header .header-right ul li.active a {
   width: 70%;
   text-align: center;
   margin: auto auto 50px;
-  line-height: 2.8em;
+  line-height: 1.5em;
   color: #666666;
 }
 .content .situation .situation-content .situation-items {
-  width: 75%;
+  width: 98%;
   text-align: center;
   margin: auto;
   overflow: hidden;
@@ -172,13 +187,14 @@ header .header-right ul li.active a {
   margin: 0;
   float: left;
   width: 25%;
+  /* .item-center{text-align: center;}*/
 }
 .content .situation .situation-content .situation-items .item .item-title {
   font-size: 2.4em;
   color: #333333;
   text-align: center;
   width: 180px;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 .content .situation .situation-content .situation-items .item .item-text {
   font-size: 1.3em;
@@ -186,12 +202,14 @@ header .header-right ul li.active a {
   width: 196px;
   text-align: left;
   line-height: 2em;
+  margin: auto;
 }
 .content .situation .situation-content .situation-items .item .item-icon {
   width: 180px;
   height: 180px;
   background: #fff;
   border-radius: 50%;
+  margin: auto;
 }
 .content .situation .situation-content .situation-items .item .icon {
   width: 180px;
@@ -239,10 +257,13 @@ header .header-right ul li.active a {
 .content .situation .situation-content .situation-items li:hover .service-icon {
   background: url('../images/service-white.png') center no-repeat;
 }
+.content .situation .situation-content .situation-items li:last-child {
+  margin-right: 0px;
+}
 .content .situation .next-icon {
   position: absolute;
   bottom: 30px;
-  left: 50%;
+  left: 48%;
 }
 .content .risk-control {
   background: #f4e2c8;
@@ -266,7 +287,7 @@ header .header-right ul li.active a {
 .content .risk-control .risk-control-content .tab-button ul li {
   display: inline-block;
   width: 30%;
-  line-height: 2.5em;
+  line-height: 50px;
   font-size: 1.8em;
   color: #666666;
 }
@@ -285,13 +306,13 @@ header .header-right ul li.active a {
   padding: 1em 0;
 }
 .content .risk-control .risk-control-content .tab-content .panel.risk-control-frame .panel-content {
-  background: url('../images/risk-control-frame.png') no-repeat;
+  background: url('../images/risk-control-frame.png') -34px 0 no-repeat;
 }
 .content .risk-control .risk-control-content .tab-content .panel.risk-control-system .panel-content {
-  background: url('../images/risk-control-system.png') no-repeat;
+  background: url('../images/risk-control-system.png') -34px 0 no-repeat;
 }
 .content .risk-control .risk-control-content .tab-content .panel.risk-control-flow .panel-content {
-  background: url('../images/risk-control-flow.png') no-repeat;
+  background: url('../images/risk-control-flow.png') -34px 0 no-repeat;
 }
 .content .risk-control .risk-control-content .tab-content .panel .panel-content {
   width: 91.8em;
@@ -303,7 +324,7 @@ header .header-right ul li.active a {
 .content .risk-control .next-icon {
   position: absolute;
   bottom: 30px;
-  left: 50%;
+  left: 48%;
 }
 footer {
   height: 34.8em;
@@ -320,7 +341,7 @@ footer .footer-content .container {
 }
 footer .footer-content .container .column {
   float: left;
-  width: 32%;
+  width: 380px;
 }
 footer .footer-content .container .column .column-title {
   font-size: 1.8em;
@@ -328,13 +349,13 @@ footer .footer-content .container .column .column-title {
   padding: 62px 0px 30px;
 }
 footer .footer-content .container .column.qrcode {
-  width: 25%;
+  width: 276px;
 }
 footer .footer-content .container .column.qrcode .column-title {
   padding-left: 20px;
 }
 footer .footer-content .container .column.academy-info {
-  width: 35%;
+  width: 419px;
 }
 footer .footer-content .container .column.academy-info .column-content ul {
   padding-left: 20px;
@@ -342,18 +363,18 @@ footer .footer-content .container .column.academy-info .column-content ul {
 footer .footer-content .container .column .column-content ul li {
   font-size: 1.4em;
   color: #758594;
-  line-height: 2.8em;
-  height: 1.8em;
-  text-indent: 2.0em;
+  line-height: 28px;
+  height: 24px;
+  text-indent: 25px;
 }
 footer .footer-content .container .column .column-content ul li.gps-info {
-  background: url('../images/footer-adress.png') 0 0.8em no-repeat;
+  background: url('../images/footer-adress.png') 0 6px no-repeat;
 }
 footer .footer-content .container .column .column-content ul li.phone-info {
-  background: url('../images/footer-phone.png') 0 0.8em no-repeat;
+  background: url('../images/footer-phone.png') 0 6px no-repeat;
 }
 footer .footer-content .container .column .column-content ul li.email-info {
-  background: url('../images/footer-mail.png') 0 0.8em no-repeat;
+  background: url('../images/footer-mail.png') 0 6px no-repeat;
 }
 footer .footer-content .container .column .column-content ul.liststyle li {
   list-style-type: square ;
@@ -368,10 +389,10 @@ footer .footer-content .container .column .column-content .content-top {
 }
 footer .footer-content .container .column .column-content .content-top .wechat-QRcode.left {
   background: url('../images/erweima_footer.png') no-repeat;
-  height: 12em;
+  height: 120px;
   float: left;
-  width: 12em;
-  padding-right: 1em;
+  width: 120px;
+  padding-right: 10px;
 }
 footer .footer-content .container .column .column-content .content-top .right {
   float: left;
@@ -380,62 +401,63 @@ footer .footer-content .container .column .column-content .content-top .right {
 footer .footer-content .container .column .column-content .content-top .right .text1 {
   font-size: 1.4em;
   color: #bdc7d4;
-  padding-bottom: 0.5em;
+  padding-bottom: 5px;
 }
 footer .footer-content .container .column .column-content .content-top .right .text2 {
   font-size: 1.3em;
   color: #758594;
 }
 footer .footer-content .container .column .column-content .QRcode-bg {
-  background: url('../images/erweima_bottom.png') -3em 10em no-repeat;
-  height: 15em;
+  background: url('../images/erweima_bottom.png') -30px 100px no-repeat;
+  height: 150px;
 }
 footer .footer-bootom {
   background: #161f2a;
-  height: 7em;
+  height: 70px;
 }
 footer .footer-bootom .bootom-content {
-  width: 108em;
+  width: 1080px;
   margin: auto;
-  padding: 1em 0;
+  padding: 10px 0;
 }
 footer .footer-bootom .bootom-content .left {
   float: left;
-  width: 67%;
+  width: 800px;
 }
 footer .footer-bootom .bootom-content .left .footer-logo {
   background: url('../images/footer-logo.png') no-repeat;
-  height: 4em;
-  width: 20%;
+  height: 40px;
+  width: 18%;
   float: left;
 }
 footer .footer-bootom .bootom-content .left .version-info {
   font-size: 1.4em;
   color: #758594;
-  line-height: 1.8em;
+  line-height: 18px;
   float: left;
   /*width: 46em;   */
-  width: 80%;
+  width: 81%;
 }
 footer .footer-bootom .bootom-content .icons-info {
   float: left;
-  width: 25%;
+  width: 276px;
 }
 footer .footer-bootom .bootom-content .icons-info .icon1 {
   background: url('../images/bottomicon_03.png') no-repeat;
-  height: 4.1em;
-  width: 6em;
+  height: 41px;
+  width: 60px;
   float: right;
 }
 footer .footer-bootom .bootom-content .icons-info .icon2 {
   background: url('../images/bottomicon_05.png') no-repeat;
-  height: 4.1em;
-  width: 4.1em;
+  height: 41px;
+  width: 41px;
   float: right;
 }
 .fiscal-division {
   background: url("../images/licaishi_bg.jpg") no-repeat;
-  background-size: 100% 100%;
+  background-position: center;
+  /* background-size:100% 100%;*/
   height: 770px!important;
   text-align: center;
   position: relative;
@@ -481,7 +503,7 @@ footer .footer-bootom .bootom-content .icons-info .icon2 {
   position: absolute;
   bottom: 9px;
   left: 9px;
-  width: 239px;
+  width: 238px;
   height: 77px;
   background-color: rgba(0, 0, 0, 0.7);
   color: #ffffff;
@@ -507,15 +529,25 @@ footer .footer-bootom .bootom-content .icons-info .icon2 {
   left: 49%;
 }
 .customer {
-  background: url("../images/iPhone-6s-mockup-hand.png") no-repeat;
-  background-size: 100% 100%;
+  background: #b81c22;
+  /* background:url("../images/iPhone-6s-mockup-hand.png")no-repeat;background-position: center;*/
   height: 452px!important;
   position: relative;
 }
-.customer .customer-wrap {
+.customer .customer-bg {
   position: absolute;
-  top: 98px;
-  left: 272px;
+  background: url("../images/iPhone-6s-mockup-hand.png") no-repeat;
+  width: 432px;
+  height: 389px;
+  top: 63px;
+  right: 0px;
+}
+.customer .customer-wrap {
+  padding-top: 98px;
+  /* position: absolute;
+    top:98px;
+    //left:420px;
+    left: 272px;*/
 }
 .customer .customer-wrap .customerleft {
   background: url("../images/erweima_redbg.png") no-repeat;
@@ -551,11 +583,12 @@ footer .footer-bootom .bootom-content .icons-info .icon2 {
 .customer .next-icon {
   position: absolute;
   bottom: 30px;
-  left: 50%;
+  left: 48%;
 }
 .academy {
   background: url("../images/academy_bg.jpg") no-repeat;
-  background-size: 100% 100%;
+  background-position: center;
+  /* background-size:100% 100%;*/
   height: 770px!important;
   text-align: center;
   position: relative;
@@ -646,7 +679,7 @@ footer .footer-bootom .bootom-content .icons-info .icon2 {
 .cooperation-partner .cooperation-container .cooperation-header .header-text {
   font-size: 1.8em;
   color: #666666;
-  line-height: 2.0em;
+  line-height: 20px;
   padding-bottom: 60px;
 }
 .cooperation-partner .cooperation-container .cooperation-content {
@@ -730,12 +763,12 @@ footer .footer-bootom .bootom-content .icons-info .icon2 {
 .cooperation-partner .next-icon {
   position: absolute;
   bottom: 30px;
-  left: 50%;
+  left: 48%;
 }
 .right-swiper {
   position: absolute;
-  right: 8%;
-  top: 50%;
+  right: 3%;
+  top: 30%;
 }
 .right-swiper ul .title {
   float: left;
@@ -749,6 +782,9 @@ footer .footer-bootom .bootom-content .icons-info .icon2 {
 .right-swiper ul .circle-icon {
   float: left;
   width: 30px;
+}
+.right-swiper ul li {
+  clear: both;
 }
 .right-swiper ul li .home-icon-white {
   background: url('../images/home-white.png') 0 6px no-repeat;
@@ -788,7 +824,7 @@ footer .footer-bootom .bootom-content .icons-info .icon2 {
   background: url('../images/circle_hl.png') no-repeat !important;
 }
 .customer .right-swiper {
-  top: 40%;
+  top: 30%;
 }
 .customer .right-swiper .circle-white-icon {
   background: url('../images/circle-white-hl.png') 2px 0px no-repeat !important;
@@ -843,4 +879,12 @@ footer .footer-bootom .bootom-content .icons-info .icon2 {
 .fiscal-division .right-swiper li:not(.active):hover .home-icon,
 .cooperation-partner .right-swiper li:not(.active):hover .home-icon {
   background: url('../images/home-hl.png') no-repeat;
+}
+@media screen and (max-width: 1000px) {
+  .right-swiper {
+    display: none;
+  }
+  html {
+    overflow-x: auto;
+  }
 }

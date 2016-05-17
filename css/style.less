@@ -16,14 +16,14 @@ img { border:none; }
 ol,ul,li { list-style:none; margin: 0;padding: 0;}
 input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
 table { border-collapse:collapse; }
-html {overflow-y: scroll;/*width: 1480px;*/}
+html {overflow-y: scroll;    /*overflow-x: hidden;*//*width: 1480px;*/}
 
 /*.wrap{width: 1080px;margin: auto}*/
 //首页
 header{
   font-family: "Microsoft YaHei";background: #fff;overflow: hidden;
   .header-left{float:left;width:30%;
-     .header-logo{background: url(../images/logo.png) no-repeat 100%; padding: 5px 20px;
+     .header-logo{background: url(../images/logo.png) 3px 10px no-repeat ;     padding: 5px 0px;
        //width: 226px;
        height: 66px;
      }
@@ -44,7 +44,7 @@ header{
   }
 }
 
-.wrap{width: 1100px;margin: auto;}
+.wrap{width: 1080px;margin: auto;position: relative;    height: 100%;    overflow: hidden;}
 //页面内容
 .content{
   height: 100%;
@@ -55,17 +55,20 @@ header{
     width: 100%;margin:0px;}
   //背景块
   .bg-banner{
-    background: url('../images/banner.png') no-repeat ;position: relative;
+   /* filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/banner.png',sizingMethod='scale');*/
+    background: url('../images/banner.jpg') no-repeat ;height: 700px!important;  /*  background-size: 100% 700px;*/position: relative;
+    background-position: center;
     .banner-right{position:absolute;top:128px;
       //right: 424px;
-      right:300px;
+      right:61px;
       background-color: rgba(255,255,255,.5);
       width: 356px;height:388px;   /* opacity: 0.7;*/
      .QRcode-content{background-color: #fff;text-align: center;  height: 378px;margin: 5px;
-        .QRcode-title{font-size: 3em;    padding-top: 1em;
+        .QRcode-center{    padding-top: 23px;}
+        .QRcode-title{font-size: 3em;    padding-top: 10px;/*text-align: left;padding-left: 30px;*/text-align:center;
             span{color: @bodyColor;}
         }
-       .QRcode-title1{font-size: 3.6em;color:@themeColor; padding-top:2px;}
+       .QRcode-title1{font-size: 3.6em;color:@themeColor; padding-top:2px;text-align:center;/*text-align: left;padding-left: 30px;*/}
        .QRcode-footer{font-size: 1.8em;    padding-top: 1em;
         span{color:@themeColor; }
        }
@@ -83,18 +86,19 @@ header{
         font-size: 3.6em;  color:@title;    margin: 70px 0 8px;
     }
     .situation-text{
-      font-size: 1.8em;width: 70%;text-align: center;margin: auto auto 50px; line-height: 2.8em;
+      font-size: 1.8em;width: 70%;text-align: center;margin: auto auto 50px; line-height: 1.5em;
       color:rgb(102,102,102);
     }
     .situation-content{
       .situation-items{
         //width: 70%;
-        width:75%;
+        width:98%;
         text-align: center;margin: auto;overflow: hidden;
         .item{ margin: 0;float: left;width: 25%;
-          .item-title{  font-size: 2.4em; color:@bodyColor;text-align: center; width: 180px;    margin: 20px 0; }
-          .item-text{font-size: 1.3em; color:@gray; width: 196px;    text-align: left;line-height: 2em;    }
-          .item-icon{width: 180px;height: 180px;background: #fff;border-radius: 50%;}
+         /* .item-center{text-align: center;}*/
+          .item-title{  font-size: 2.4em; color:@bodyColor;text-align: center; width: 180px;    margin: 20px auto; }
+          .item-text{font-size: 1.3em; color:@gray; width: 196px;    text-align: left;line-height: 2em; margin: auto;   }
+          .item-icon{width: 180px;height: 180px;background: #fff;border-radius: 50%;margin: auto;}
            .icon{width: 180px;height: 180px;}
           .professional-team-icon{background: url('../images/professional-team.png') center no-repeat;}
           .academy-icon{background: url('../images/academy.png') center no-repeat;width: 180px;height: 180px;}
@@ -113,12 +117,13 @@ header{
             .platform-icon{background: url('../images/platform-white.png') center no-repeat;}
             .service-icon{background: url('../images/service-white.png') center no-repeat;}
         }
+        li:last-child{margin-right: 0px;}
       }
     }
     .next-icon{
       position:absolute;
       bottom: 30px;
-      left: 50%;
+      left: 48%;
     }
   }
 
@@ -131,7 +136,7 @@ header{
        .tab-button{
          background: #fff;height: 50px;width: 480px; margin: auto;text-align: center;    border-radius: 2px;
          ul{
-           li{display: inline-block;width: 30%;    line-height: 2.5em;font-size: 1.8em;color:@gray ;}
+           li{display: inline-block;width: 30%;    line-height: 50px;font-size: 1.8em;color:@gray ;}
            li:hover,li:active,li.active{color:@title;cursor: pointer; }
            a.active{color:@title; }
          }
@@ -141,9 +146,9 @@ header{
        }
        .tab-content{
           .panel{
-            &.risk-control-frame .panel-content{background: url('../images/risk-control-frame.png') no-repeat;}
-            &.risk-control-system .panel-content{background: url('../images/risk-control-system.png') no-repeat;}
-            &.risk-control-flow .panel-content{background: url('../images/risk-control-flow.png') no-repeat;}
+            &.risk-control-frame .panel-content{background: url('../images/risk-control-frame.png') -34px 0 no-repeat;}
+            &.risk-control-system .panel-content{background: url('../images/risk-control-system.png') -34px 0 no-repeat;}
+            &.risk-control-flow .panel-content{background: url('../images/risk-control-flow.png') -34px 0 no-repeat;}
             .panel-content{
                 width: 91.8em;
                 height: 46.4em;
@@ -157,7 +162,7 @@ header{
     .next-icon{
       position:absolute;
       bottom: 30px;
-      left: 50%;
+      left: 48%;
     }
   }
 }
@@ -169,15 +174,15 @@ footer{
    padding: 0 9em;height: 27.8em;background: #202c3c;
     .container{width: 108em;    margin: auto;
       .column {
-        float: left;   width: 32%;
+        float: left;   width: 380px;
         .column-title {
           font-size: 1.8em;color: rgb(149,166,183);    padding: 62px 0px 30px;
         }
         &.qrcode{
-          width: 25%;
+          width: 276px;
           .column-title{padding-left: 20px;}
         }
-        &.academy-info{width: 35%;
+        &.academy-info{width: 419px;
           .column-content ul {
            padding-left: 20px;
           }
@@ -185,10 +190,10 @@ footer{
         .column-content{
           ul{
             li{
-              font-size: 1.4em;color: rgb(117,133,148);line-height: 2.8em;height: 1.8em;text-indent: 2.0em;
-              &.gps-info{background:url('../images/footer-adress.png') 0 0.8em  no-repeat; }
-              &.phone-info{background:url('../images/footer-phone.png') 0 0.8em  no-repeat; }
-              &.email-info{background:url('../images/footer-mail.png') 0 0.8em no-repeat; }
+              font-size: 1.4em;color: rgb(117,133,148);line-height: 28px;height: 24px;text-indent: 25px;
+              &.gps-info{background:url('../images/footer-adress.png') 0 6px  no-repeat; }
+              &.phone-info{background:url('../images/footer-phone.png') 0 6px  no-repeat; }
+              &.email-info{background:url('../images/footer-mail.png') 0 6px no-repeat; }
 
             }
             &.liststyle{
@@ -200,45 +205,45 @@ footer{
           .content-top{
             padding-left: 20px;
             .wechat-QRcode.left{
-              background:url('../images/erweima_footer.png')  no-repeat; height: 12em;
-              float: left;width: 12em;padding-right: 1em;
+              background:url('../images/erweima_footer.png')  no-repeat; height: 120px;
+              float: left;width: 120px;padding-right: 10px;
             }
             .right{
               float: left;;width: 40%;
-              .text1{font-size: 1.4em;color: rgb(189,199,212);padding-bottom: 0.5em;}
+              .text1{font-size: 1.4em;color: rgb(189,199,212);padding-bottom: 5px;}
               .text2{font-size: 1.3em;color: rgb(117,133,148);}
             }
           }
           .QRcode-bg{
-            background:url('../images/erweima_bottom.png') -3em 10em no-repeat; height: 15em;
+            background:url('../images/erweima_bottom.png') -30px 100px no-repeat; height: 150px;
           }
         }
       }
     }
   }
   .footer-bootom{
-    background: #161f2a;height: 7em;
+    background: #161f2a;height: 70px;
     .bootom-content{
-     width: 108em; margin: auto;    padding: 1em 0;
-      .left{float: left;width: 67%;
+     width: 1080px; margin: auto;    padding: 10px 0;
+      .left{float: left;width: 800px;
         .footer-logo{
-          background:url('../images/footer-logo.png')  no-repeat;height: 4em;width:20%;float: left;
+          background:url('../images/footer-logo.png')  no-repeat;height: 40px;width:18%;float: left;
         }
-        .version-info{font-size: 1.4em;color: rgb(117,133,148);line-height: 1.8em;float: left;/*width: 46em;   */ width: 80%;}
+        .version-info{font-size: 1.4em;color: rgb(117,133,148);line-height: 18px;float: left;/*width: 46em;   */ width: 81%;}
       }
 
       .icons-info{
-        float: left;width: 25%;
-        .icon1{background:url('../images/bottomicon_03.png')  no-repeat;height: 4.1em;width: 6em;float: right;}
-        .icon2{background:url('../images/bottomicon_05.png')  no-repeat;height: 4.1em;width: 4.1em;float: right;}
+        float: left;width: 276px;
+        .icon1{background:url('../images/bottomicon_03.png')  no-repeat;height: 41px;width: 60px;float: right;}
+        .icon2{background:url('../images/bottomicon_05.png')  no-repeat;height: 41px;width: 41px;float: right;}
       }
     }
   }
 }
 //理财师
 .fiscal-division{
-  background:url("../images/licaishi_bg.jpg") no-repeat;position: relative;
-  background-size:100% 100%;
+  background:url("../images/licaishi_bg.jpg") no-repeat;position: relative;background-position: center;
+ /* background-size:100% 100%;*/
   height:770px!important;
   text-align:center;
   position: relative;
@@ -278,7 +283,7 @@ footer{
           position: absolute;
           bottom:9px;
           left:9px;
-          width: 239px;
+          width: 238px;
           height:77px;
           background-color: rgba(0,0,0,.7);
           color: #ffffff;
@@ -309,16 +314,21 @@ footer{
 }
 //用户
 .customer{
-  background:url("../images/iPhone-6s-mockup-hand.png")no-repeat;
-  background-size:100% 100%;
-
+  background: #b81c22;
+ /* background:url("../images/iPhone-6s-mockup-hand.png")no-repeat;background-position: center;*/
   height: 452px!important;
   position:relative;
-  .customer-wrap{
+  .customer-bg{
     position: absolute;
+    background:url("../images/iPhone-6s-mockup-hand.png")no-repeat;width: 432px;
+    height: 389px;    top: 63px;   right: 0px;
+  }
+  .customer-wrap{
+    padding-top: 98px;
+   /* position: absolute;
     top:98px;
     //left:420px;
-    left: 272px;
+    left: 272px;*/
     .customerleft{
       background: url("../images/erweima_redbg.png") no-repeat;
       width:206px;
@@ -354,13 +364,13 @@ footer{
   .next-icon{
     position:absolute;
     bottom: 30px;
-    left: 50%;
+    left: 48%;
   }
 }
 //研究院
 .academy{
-  background:url("../images/academy_bg.jpg") no-repeat;position: relative;
-  background-size:100% 100%;
+  background:url("../images/academy_bg.jpg") no-repeat;position: relative;background-position: center;
+ /* background-size:100% 100%;*/
   height:770px!important;
   text-align:center;
   position: relative;
@@ -439,7 +449,7 @@ footer{
       width: 1080px;margin: auto;padding: 74px 0px;text-align: center;
       .cooperation-header{
         .header-title{ font-size: 3.6em;  color:@title;    padding-bottom: 22px;}
-        .header-text{font-size: 1.8em;color:@gray; line-height: 2.0em;padding-bottom: 60px;}
+        .header-text{font-size: 1.8em;color:@gray; line-height: 20px;padding-bottom: 60px;}
       }
       .cooperation-content{
         height: 441px;
@@ -476,19 +486,19 @@ footer{
   .next-icon{
     position:absolute;
     bottom: 30px;
-    left: 50%;
+    left: 48%;
   }
 }
 
 //滚动版块
 .right-swiper{
   position: absolute;
-  right: 8%;
-  top: 50%;
+  right: 3%;
+  top: 30%;
   ul{
     .title{float: left;width: 50px;font-size: 1.2em;text-align: right;height: 20px;visibility: hidden;}
     .home-icon,.circle-icon{float: left;width: 30px;}
-    li{
+    li{clear: both;
       .home-icon-white{ background: url('../images/home-white.png') 0 6px no-repeat;width: 20px;height: 26px; float: left;  }
       .home-icon{background: url('../images/home_ico.png') 0 2px no-repeat;width: 20px;height: 26px;   }
       .circle-icon{ background: url('../images/circle.png') 8px 8px no-repeat;   width: 20px;height: 23px;   }
@@ -510,7 +520,7 @@ footer{
   }
 }
 .customer .right-swiper{
-  top: 40%;
+  top: 30%;
   .circle-white-icon{
     background: url('../images/circle-white-hl.png') 2px 0px no-repeat!important; width: 20px;height: 23px;    float: left; }
   .title{ color: #fff!important; }
@@ -544,3 +554,7 @@ footer{
   }
 }
 
+@media screen and (max-width:1000px){
+  .right-swiper{display: none;}
+  html{overflow-x:auto; }
+}
